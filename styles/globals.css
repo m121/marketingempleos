@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    font-face {
+        font-family: 'Manrope';
+        src: url('/font/ManropeRegular.ttf') format('ttf');
+        font-weight: 400;
+        font-display: swap;
+        font-style: normal;
+    }
+    body{
+        font-family: 'Manrope',sans-serif;
+    }
+  }
+
+  summary{ list-style: none }
+
+  .text-glow {
+    text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
+  }
+
+  .text-gradient {
+    background: linear-gradient(to right, #30CFD0, #38E54D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* From https://css.glass */
+  .nav{
+
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
